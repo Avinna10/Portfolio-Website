@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact-Avinna Maharjan</title>  <!--Title of Web Page-->
+    
+    <meta name="description" content="contact details"/>
+    <meta name="keywords" content="HTML,CSS,JS,form"/>
+    <meta name="author" content="Avinna Maharjan"/>
+    <meta charset="UTF-8"/>
+
+    <!--Use of External CSS-->
+    <link rel="stylesheet" href="../cw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <!--Navigation Bar-->
+        <nav>
+            <ul><b>
+                <li><a href="../Home.html">Home</a></li>
+                <li><a href="../pages/CV.html">CV</a></li>
+                <li><a href="../pages/Blog.html">Blog</a></li>
+                <li><a href="../pages/Research.html">Research</a></li>
+                <li style="float:right;"><a class="active" href="../pages/Contact.html">Contact</a></li>
+            </b></ul>
+        </nav>
+
+        <!--Text to address visitor of website-->
+    <div class ="contact">
+
+        <h2>Feedback Form</h2>
+
+        <p id="target" style="margin:0%"></p>   <!--Use of inline CSS--> 
+        Thank you for visiting my website. If you have any queries or feedback feel free to drop message below.
+       
+    </div>   
+    
+    <!--Form section-->
+    <div>
+        <form name="messageForm" onsubmit="validdate()" >
+            <table class="form">
+                <tr>
+                    <td>First Name:</td>
+                    <td><input type="text" name="first_name" id="first_name" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Last Name:</td>
+                    <td><input type="text" name="last_name" id="last_name" size="30"></td>
+                </tr>
+                <tr>
+                    <td>E-mail:</td>
+                    <td><input type="text" name="email" id="email" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Contact No.:</td>
+                    <td><input type="text" name="contact_no" id="contact_no" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Address:</td>
+                    <td><input type="text" name="address" id="address" size="30"></td>
+                </tr>
+                <tr>
+                    <td>Message:</td>
+                   
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <textarea name="message" id="message" cols="40" rows="8" placeholder="Write a message..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+
+    <!--Footer section for social media links-->
+    <div >
+        <footer style="text-align: center;">
+            <a href="https://www.facebook.com/avinna.maharjan/" class="fa fa-facebook" ></a>
+            <a href="https://www.instagram.com/a.v.i.n.n.a/" class="fa fa-instagram"></a>
+            <a href="http://www.google.com" class="fa fa-google"></a>
+            <p>&copy2021. All rights reserved.</p>
+    </footer>
+    </div>  
+
+    <!--Real world date and time display-->
+    <div class="time">
+        <h1 id="date"></h1> 
+    </div>
+
+    <!--Use of internal JavaScript-->
+    <script>
+        
+        //Javascript to display prompt to input username
+        var name = prompt('Please enter your name');
+        var element = document.getElementById('target');
+        element.innerHTML = "Hello " + name; 
+
+
+        //Javascript to display time
+        function display_date() {
+            document.getElementById('date').innerHTML = Date();
+            setTimeout(display_date,1000);
+        }
+        display_date();
+
+        //Javascript to validate form
+        /*It also checks whether the user has filled up all 
+        the important section or not and dipslays prompt message.*/
+        function validdate() {
+            var first_name = document.forms["messageForm"]["first_name"].value;
+            var last_name = document.forms["messageForm"]["last_name"].value;
+            var email = document.forms["messageForm"]["email"].value;
+            var contact_no = document.forms["messageForm"]["contact_no"].value;
+            var address = document.forms["messageForm"]["address"].value;
+            var message = document.forms["messageForm"]["message"].value;
+
+            if(first_name == "" || email == "" || contact_no == "" || message == ""){
+                alert("Empty field found.");
+            } else {
+                alert("Thank you for the feedback.");
+            }
+        }
+    </script>
+</body>
+</html>

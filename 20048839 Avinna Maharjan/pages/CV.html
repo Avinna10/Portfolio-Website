@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CV-Avinna Maharjan</title> <!--Title of webpage-->
+
+    <meta name="description" content="curriculum vitae"/>
+    <meta name="keywords" content="HTML,CSS,JS,CV"/>
+    <meta name="author" content="Avinna Maharjan"/>
+    <meta charset="UTF-8"/>
+
+    <!--Extrenal CSS-->
+    <link rel="stylesheet" href="../cw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Internal CSS-->
+    <style>
+        .lan{       /*style for the texts inside lan class*/
+            float: none;
+            display: inherit;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        h3{         /*Style for the every Text inside the H3 tag*/
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-bottom: 5px;
+            color: blue;
+        }
+
+        .bor{       /*Border lines for the table rows and columns*/
+            border: 2px solid black;            
+        }
+
+    </style>
+</head>
+<body>
+    <!--Navigation bar-->
+    <nav>
+        <ul><b>
+            <li><a href="../Home.html">Home</a></li>
+            <li><a class="active" href="../pages/CV.html">CV</a></li>
+            <li><a href="../pages/Blog.html">Blog</a></li>
+            <li><a href="../pages/Research.html">Research</a></li>
+            <li style="float:right;"><a href="../pages/Contact.html">Contact</a></li>
+        </b></ul>
+    </nav>
+
+    <!-- Curriculum Vitae-->
+    <div class="row">   <!--Page layout-->
+        <div class="leftcolumn">    <!--For the left part of column-->
+            <div class="card">
+                <h2 style="font-family: 'Courier New', Courier, monospace; margin-bottom: 15px;">Avinna Maharjan</h2>   <!--Use of inline CSS--> 
+                <img src="../images/person.png" style="width: 200px;height: 200px;">
+            </div>
+
+            <div class="card">
+                <h3>Personal Details</h3><hr>
+                <!--Use of table to keep data of personal details-->
+                <table style="text-align: left; margin: auto;">
+                    <tr>
+                        <td>Address:</td>
+                        <td>Panga, Kirtipur</td>
+                    </tr>
+                    <tr>
+                        <td>DOB:</td>
+                        <td>Oct 9, 2002</td>
+                    </tr>
+                    <tr>
+                        <td>Nationality:</td>
+                        <td>Nepali</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td>mhrznavinna401@gmail.com</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Languages</h3><hr>
+                <!--Listing languages in unordered list-->
+                <ul style="background-color: rgb(218, 241, 188);">
+                    <li class="lan">Nepali</li>
+                    <li class="lan">Newari</li>
+                    <li class="lan">English</li>
+                    <li class="lan">Hindi</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Hobbies</h3><hr>
+                <!--Listing hobbies in unordered list-->
+                <ul style="background-color: rgb(218, 241, 188);">
+                    <li class="lan">Gaming</li>
+                    <li class="lan">Writing</li>
+                    <li class="lan">Coding</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="rightcolumn">   <!--For the right part of the column-->
+            <div class="card">
+                <h3>Summary</h3><hr>
+                <p style="text-align: justify;">
+                    Being a student, I am currently persuing the undergraduate degree of B.Sc Hons.(Computing) from Islingtion College affiliated with London Metropolitan University. Focusing to face new challenges and adapt according to modern needs.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Education</h3><hr>
+                <!--Details of education is managed in table tag-->
+                <table style="text-align: left; margin: auto; width: 100%; border: 1px solid black; border-collapse: collapse;">
+                    <tr>
+                        <th class="bor"></th>
+                        <th class="bor">Certification</th>
+                        <th class="bor">Institution</th>
+                        <th class="bor">Date</th>
+                    </tr>
+                    <tr>
+                        <td class="bor">1.</td>
+                        <td class="bor">BSc. Hons (Computing)</td>
+                        <td class="bor">Islington College/ London Met. University</td>
+                        <td class="bor">2020-present</td>
+                    </tr>
+                    <tr>
+                        <td class="bor">2.</td>
+                        <td class="bor">+2 NEB(Science)</td>
+                        <td class="bor">DAV College</td>
+                        <td class="bor">2020</td>
+                    </tr>
+                    <tr>
+                        <td class="bor">3.</td>
+                        <td class="bor">SEE</td>
+                        <td class="bor">Magus English School</td>
+                        <td class="bor">2018</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="card">
+                <h3>Skills</h3><hr>
+                <!--Section for the skills-->
+                    <div class="col">
+                        <ul style="background-color: rgb(218, 241, 188);">
+                            <li class="lan">Team Leadership</li>
+                            <li class="lan">Report Writing</li>
+                            <li class="lan">Time Management</li>
+                            <li class="lan">Planning</li>
+                            <li class="lan">Team Work</li>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="card">
+                <h3>Training</h3><hr>
+                <!--Details of training in table tag-->
+                    <table style="text-align: left; margin: auto; width: 100%; border: 1px solid black; border-collapse: collapse;">    <!--Use of inline CSS--> 
+                        <tr>
+                            <th class="bor"></th>
+                            <th class="bor">Course</th>
+                            <th class="bor">Institution</th>
+                            <th class="bor">Duration</th>
+                        </tr>
+                        <tr>
+                            <td class="bor">1.</td>
+                            <td class="bor">Graphics Designing</td>
+                            <td class="bor">Odyssey Institute</td>
+                            <td class="bor">2 months</td>
+                        </tr>
+                        <tr>
+                            <td class="bor">2.</td>
+                            <td class="bor">Java</td>
+                            <td class="bor">Islington College</td>
+                            <td class="bor">4 months</td>
+                        </tr>
+                        <tr>
+                            <td class="bor">3.</td>
+                            <td class="bor">Database</td>
+                            <td class="bor">Islington College</td>
+                            <td class="bor">3 months</td>
+                        </tr>
+                    </table>
+            </div>
+
+            <div class="card">
+                <h3>References</h3><hr>
+                <!--References list-->
+                <div class="col">
+                    <ul style="background-color: rgb(218, 241, 188);">
+                        <li class="lan">Raj Kumar Nakarmi, <br> Director, <br> Magus English School</li>
+                        <li class="lan">Suman Basnet, <br> Academic Director, <br> DAV College</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer section of social media links-->
+    <div >
+        <footer style="text-align: center;">
+            <a href="https://www.facebook.com/avinna.maharjan/" class="fa fa-facebook" ></a>
+            <a href="https://www.instagram.com/a.v.i.n.n.a/" class="fa fa-instagram"></a>
+            <a href="http://www.google.com" class="fa fa-google"></a>
+            <p>&copy2021. All rights reserved.</p>
+    </footer>
+    </div>  
+
+</body>
+</html>

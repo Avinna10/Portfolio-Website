@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Research-Avinna Maharjan</title> <!--Title of Web Page-->
+    
+    <meta name="description" content="research materials"/>
+    <meta name="keywords" content="HTML,CSS,JS,Image,Research"/>
+    <meta name="author" content="Avinna Maharjan"/>
+    <meta charset="UTF-8"/>
+
+        <!--Use of External CSS-->
+    <link rel="stylesheet" href="../cw.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Use of internal CSS-->
+    <style>
+        .rows{      /*divides the rows into two columns*/
+            display: flex;
+            margin: 10px 20px 0px 20px;
+        }
+
+        .left{      /*manages the size of left column*/
+            flex:50%;
+            padding: 80px 4px 0px 120px;
+        }
+
+        .right{     /*manages the size of right column*/
+            flex: 50%;
+            padding: 80px 120px 0px 4px;
+        }
+
+        .ref{           /*manages the style of images */
+            width:100%;
+            height:400px;
+            border: 2px solid black;
+        }
+
+        .tex{           /* manages the text size and other layout of text*/
+            text-align: center;
+            margin: 0px 150px 40px 150px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Navigation Bar-->
+    <nav>
+        <ul><b>
+            <li><a href="../Home.html">Home</a></li>
+            <li><a href="../pages/CV.html">CV</a></li>
+            <li><a href="../pages/Blog.html">Blog</a></li>
+            <li><a class="active" href="../pages/Research.html">Research</a></li>
+            <li style="float:right;"><a href="../pages/Contact.html">Contact</a></li>
+        </b></ul>
+    </nav>
+
+    <!--Research details of navigation bar-->
+    <div class="rows">
+        <div class="left">
+            <img src="../images/nav.png" class="ref">
+        </div>
+        <div class="right">
+            <img src="../images/slider.png" class="ref">
+        </div>
+    </div>
+
+    <div class="tex">
+        Design of the navigation bar is inspired from the layout of W3schools. Half of the content in the navigation area is in the left side while remaining in the right. The overall idea is to list the links of web pages and use float CSS property to align the links left and right and display property to arrange them horizontally. Similarly, analyzing their coding I listed links in unordered list and aligned 4 links to left and one to the right.
+    </div><hr>
+
+    <!--Research details about home page-->
+    <div class="rows">
+        <div class="left">
+            <img src="../images/home.png" class="ref">
+        </div>
+        <div class="right">
+            <img src="../images/slider.png" class="ref">
+        </div>
+    </div>
+
+    <div class="tex">
+        After visting different portfolio websites, I got to knowledge that homepage should have attraction. Most of the websites use image silder. After inspecting the website of the left image, I got to know that javascript is used to make image slider. Similary for the text in the image, CSS is used to hold it at the centre and background transparent.
+    </div><hr>
+
+    <!--Research Details about footer-->
+    <div class="rows">
+
+        <div class="left">
+            <img src="../images/footer.png" class="ref">
+        </div>
+        <div class="right">
+            <img src="../images/slider.png" class="ref">
+        </div>
+    </div>
+
+    <div class="tex">
+        Footer section of the webpage that I viewed mostly had their social sites link attached. Similarly to design the footer part I visited Kritsen Lee website in which he had used social sites icons and copyright at the bottom of the page. For this links and other texts are aligned at center inside the footer tag.
+    </div><hr>
+
+    <!--Research details about contact page-->
+    <div class="rows">
+        <div class="left">
+            <img src="../images/contact.png" class="ref">
+        </div>
+        <div class="right">
+            <img src="../images/conta.png" class="ref">
+        </div>
+    </div>
+
+    <div class="tex">
+        Contact page on the website contains the form where visitors give feedback. For the layout of the form, I visited portfolio website of Maya Nelson where form is aligned at center and used div tags to keep to input box and names. Using the idea to align form at center I used table tag instead of div for input box areas.
+    </div><hr>
+
+
+    <!--Reasearch details about CV-->
+    <div class="rows">
+        <div class="left">
+            <img src="../images/cv.png" class="ref">
+        </div>
+        <div class="right">
+            <img src="../images/cvm.png" class="ref">
+        </div>
+    </div>
+
+    <div class="tex">
+        On exploring the websites for the CV, I found the portfolio of John Stuart. He had designed the CV by keeping certain particular things at one block. Just like, personal details in one block and education in another. I found that, CSS flexbox property is used to create those blocks. Then I also used flexbox property to create those blocks and additionaly I also included some tables tags in different blocks.
+    </div><hr>
+
+    <!--Footer section for social media links-->
+    <div >
+        <footer style="text-align: center;">
+            <a href="https://www.facebook.com/avinna.maharjan/" class="fa fa-facebook" ></a>
+            <a href="https://www.instagram.com/a.v.i.n.n.a/" class="fa fa-instagram"></a>
+            <a href="http://www.google.com" class="fa fa-google"></a>
+            <p>&copy2021. All rights reserved.</p>
+    </footer>
+    </div>  
+</body>
+</html>
